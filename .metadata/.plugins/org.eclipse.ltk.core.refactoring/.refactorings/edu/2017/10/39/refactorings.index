@@ -1,0 +1,10 @@
+1506847160359	Delete element
+1506847167598	Delete element
+1506847176740	Delete element
+1506847267799	Delete element
+1506847306090	Rename package 'ncsu.monopoly'
+1506850088610	Extract local variable 'equals'
+1506851585349	Move method 'getCellNumber'
+1506851975860	Inline local variable 'message'
+1506852334143	Convert local variable 'owner' to field
+1506852934354	Extract superclass 'Superclass'

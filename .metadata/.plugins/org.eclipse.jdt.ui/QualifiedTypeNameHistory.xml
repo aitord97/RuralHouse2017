@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="OperadorAritmetico"/>
+<fullyQualifiedTypeName name="Subscripcion"/>
+<fullyQualifiedTypeName name="java.util.Deque"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="Pila"/>
+<fullyQualifiedTypeName name="edu.ncsu.monopoly.gui.GoCellInfoFormatter"/>
+<fullyQualifiedTypeName name="edu.ncsu.monopoly.gui.InfoFormatter"/>
+<fullyQualifiedTypeName name="lab3.FinTrayecto"/>
+<fullyQualifiedTypeName name="lab3.Square"/>
+<fullyQualifiedTypeName name="lab3.Rectangle"/>
+<fullyQualifiedTypeName name="lab3.Circle"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="monopoly.GameMaster"/>
+<fullyQualifiedTypeName name="srp.Deduccion"/>
+<fullyQualifiedTypeName name="lsk.Configuracion"/>
+<fullyQualifiedTypeName name="businessLogic.ApplicationFacadeInterfaceWS"/>
+<fullyQualifiedTypeName name="businessLogic.FacadeImplementationWS"/>
+<fullyQualifiedTypeName name="dataAccess.DataAccess"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,76 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-10 12:58:41 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 4642@MacBook-Pro-de-Aitor.local
+
+[2017-11-10 12:59:09 #2 type.registry] 
+New type domain.User
+
+[2017-11-10 12:59:09 #3 type] 
+Type domain.User is not enhanced.
+
+[2017-11-10 12:59:09 #4 type.registry] 
+New type twitter4j.TwitterProfile
+
+[2017-11-10 12:59:09 #5 type.registry] 
+New type domain.Offer
+
+[2017-11-10 12:59:09 #6 type.registry] 
+New type java.util.Vector<domain.Offer>
+
+[2017-11-10 12:59:09 #7 type.registry] 
+New type domain.Reserva
+
+[2017-11-10 12:59:09 #8 type.registry] 
+New type java.util.Vector<domain.Reserva>
+
+[2017-11-10 12:59:09 #9 type.registry] 
+New type domain.RuralHouse
+
+[2017-11-10 12:59:09 #10 type.registry] 
+New type java.util.Vector<domain.RuralHouse>
+
+[2017-11-10 12:59:09 #11 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-10 12:59:09 #12 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-10 12:59:09 #13 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-10 12:59:09 #14 type] 
+Type domain.RuralHouse is not enhanced.
+
+[2017-11-10 12:59:09 #15 type.registry] 
+New type java.util.Vector<java.lang.String>
+
+[2017-11-10 12:59:38 #16 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2017-11-10 12:59:44 #17 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-10 18:17:36 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' has been recovered (tr. 1-6)
+
+[2017-11-10 18:17:41 #2 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 4806@MacBook-Pro-de-Aitor.local
+
+[2017-11-10 18:17:41 #3 type] 
+Type domain.User is not enhanced.
+
+[2017-11-10 18:17:41 #4 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-10 18:17:41 #5 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-10 18:17:41 #6 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-10 18:17:41 #7 type] 
+Type domain.RuralHouse is not enhanced.
+

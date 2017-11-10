@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract from method &apos;movePlayer&apos; variable &apos;gui&apos;" description="Extract from method &apos;movePlayer&apos;" flags="6" id="org.eclipse.extract.method" stamp="1507386229952"/>
+</session>

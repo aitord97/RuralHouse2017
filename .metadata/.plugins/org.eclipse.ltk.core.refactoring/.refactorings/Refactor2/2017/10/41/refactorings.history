@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move method &apos;getTotalPrice&apos; to &apos;Item&apos;" description="Move method &apos;getTotalPrice&apos;" flags="6" id="org.eclipse.move.method" stamp="1507450478766"/>
+</session>
