@@ -60,7 +60,7 @@ public interface ApplicationFacadeInterfaceWS  {
 	 * 
 	 * @return a Set of rural houses
 	 */
-	@WebMethod public Vector<RuralHouse> getAllRuralHouses();
+	@WebMethod public ExtendedIterator ruralHouseIterator();
 	
 	/**
 	 * This method obtains the  offers of a ruralHouse in the provided dates 

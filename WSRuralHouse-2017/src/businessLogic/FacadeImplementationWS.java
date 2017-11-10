@@ -94,13 +94,10 @@ public User currentUser;
 		DataAccess dbManager=new DataAccess();
 		dbManager.setPassByAcc(u, pass);
 	}
-	public Vector<RuralHouse> getAllRuralHouses()  {
-		System.out.println(">> FacadeImplementationWS: getAllRuralHouses");
-		DataAccess dbManager=new DataAccess();
-		Vector<RuralHouse>  ruralHouses=dbManager.getAllRuralHouses();
-		dbManager.close();
-		System.out.println("<< FacadeImplementationWS:: getAllRuralHouses");
-		return ruralHouses;
+	public ExtendedIterator ruralHouseIterator(){
+		ExtendedIterator ei = new RuralHouseIterator();
+		return ei;
+		
 	}
 	public Vector<Offer> getOffersOfUser (User u){
 		System.out.println(">> FacadeImplementationWS: getOffersOfUser");

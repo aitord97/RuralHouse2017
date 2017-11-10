@@ -14,7 +14,9 @@ import domain.Reserva;
 import domain.RuralHouse;
 import domain.User;
 import businessLogic.ApplicationFacadeInterfaceWS;
+import businessLogic.ExtendedIterator;
 import businessLogic.FacadeImplementationWS;
+import businessLogic.RuralHouseIterator;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -71,6 +73,7 @@ public class MainGUI extends JFrame {
 	private JButton btnEditOffer;
 	private JButton btnCancelOffer;
 	private JButton btnNewButton;
+	private ExtendedIterator rh1= new RuralHouseIterator();
 	
 
 	private JLabel lblTwitterName;
@@ -341,8 +344,15 @@ public class MainGUI extends JFrame {
 			btnEditOffer.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 			  		ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
-
-					EditOfferGUI a = new EditOfferGUI(facade.getAllRuralHouses());
+			  		Vector<RuralHouse> vr = new Vector<>();
+			  		rh1= facade.ruralHouseIterator();
+			  		rh1.goFirst();
+			  		while(rh1.hasNext()) {
+			  			vr.add(rh1.next());
+			  			
+			  		}
+			  		
+					EditOfferGUI a = new EditOfferGUI(vr);
 					a.setVisible(true);
 					
 				}

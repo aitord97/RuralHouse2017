@@ -16,8 +16,13 @@
 <fullyQualifiedTypeName name="monopoly.GameMaster"/>
 <fullyQualifiedTypeName name="srp.Deduccion"/>
 <fullyQualifiedTypeName name="lsk.Configuracion"/>
-<fullyQualifiedTypeName name="businessLogic.ApplicationFacadeInterfaceWS"/>
-<fullyQualifiedTypeName name="businessLogic.FacadeImplementationWS"/>
 <fullyQualifiedTypeName name="dataAccess.DataAccess"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="domain.RuralHouse"/>
+<fullyQualifiedTypeName name="businessLogic.ExtendedIterator"/>
+<fullyQualifiedTypeName name="businessLogic.RuralHouseIterator"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="businessLogic.ApplicationFacadeInterfaceWS"/>
+<fullyQualifiedTypeName name="businessLogic.FacadeImplementationWS"/>
 </qualifiedTypeNameHistroy>

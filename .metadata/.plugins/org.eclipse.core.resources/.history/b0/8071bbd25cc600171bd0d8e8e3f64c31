@@ -1,0 +1,57 @@
+package businessLogic;
+
+import java.util.Vector;
+
+import dataAccess.DataAccess;
+import domain.RuralHouse;
+
+public class RuralHouseIterator implements ExtendedIterator {
+	
+	DataAccess dbManager=new DataAccess();
+	Vector<RuralHouse>  ruralHouses=dbManager.getAllRuralHouses();
+	int contador = 0;
+	RuralHouse rh ;
+
+	@Override
+	public boolean hasNext() {
+		if (contador<ruralHouses.size()) {
+			return true;
+		}else {
+				return false;
+		}
+	}
+
+	@Override
+	public RuralHouse next() {
+		rh = ruralHouses.get(contador);
+		contador++;
+		return rh;
+	}
+
+	@Override
+	public RuralHouse previous() {
+		rh=ruralHouses.get(contador);
+		contador--;
+		return rh;
+	}
+
+	@Override
+	public boolean hasPrevious() {
+		if (contador==0) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	@Override
+	public void goFirst() {
+		contador=0;	
+	}
+
+	@Override
+	public void goLast() {
+		contador=ruralHouses.size();
+	}
+
+}

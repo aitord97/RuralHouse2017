@@ -1,6 +1,8 @@
 package gui;
 
 import businessLogic.ApplicationFacadeInterfaceWS;
+import businessLogic.ExtendedIterator;
+import businessLogic.RuralHouseIterator;
 
 import com.toedter.calendar.JCalendar;
 
@@ -69,7 +71,7 @@ private JRadioButton chckbxUrbano;
 private JRadioButton chckbxRural;
 private Vector<String> filterlist = new Vector<String>();
 private Vector<RuralHouse> rhs = new Vector<RuralHouse>();
-private Vector<RuralHouse> rh1= new Vector<RuralHouse>();
+private ExtendedIterator rh1= new RuralHouseIterator();
 private final ButtonGroup buttonGroup = new ButtonGroup();
 private final JLabel lblFondo = new JLabel("");
 
@@ -94,9 +96,10 @@ private final JLabel lblFondo = new JLabel("");
 	 
 	ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
 		
-	rh1=facade.getAllRuralHouses();
-	for (RuralHouse r: rh1){
-		rhinf.addElement(r);
+	rh1= facade.ruralHouseIterator();
+	rh1.goFirst();
+	while (rh1.hasNext()){
+		rhinf.addElement(rh1.next());
 		//JOptionPane.showMessageDialog(getContentPane(), "Offer Boooked");
 		dispose();
 	}
@@ -244,9 +247,10 @@ private final JLabel lblFondo = new JLabel("");
     		ApplicationFacadeInterfaceWS facade = MainGUI.getBusinessLogic();
     		
     		rhinf.removeAllElements();
-    		for (RuralHouse r: rh1){
+    		rh1.goFirst();
+    		while (rh1.hasNext()){
     			if (chckbxMonte.isSelected()){
-    			if (facade.getFiltersOfRH(r).contains("Monte")){rhinf.addElement(r);}
+    			if (facade.getFiltersOfRH(rh1.next()).contains("Monte")){rhinf.addElement(rh1.next());}
     		}
     			
     			}
@@ -267,9 +271,10 @@ private final JLabel lblFondo = new JLabel("");
     		ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
     		
     		rhinf.removeAllElements();
-    		for (RuralHouse r: rh1){
+    		rh1.goFirst();
+    		while (rh1.hasNext()){
     			if (chckbxPlaya.isSelected()){
-    			if (facade.getFiltersOfRH(r).contains("Playa")){rhinf.addElement(r);}
+    			if (facade.getFiltersOfRH(rh1.next()).contains("Playa")){rhinf.addElement(rh1.next());}
     		}
     			
     			}
@@ -284,9 +289,10 @@ private final JLabel lblFondo = new JLabel("");
     	public void actionPerformed(ActionEvent arg0) {
     		ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
     		rhinf.removeAllElements();
-    		for (RuralHouse r: rh1){
+    		rh1.goFirst();
+    		while (rh1.hasNext()){
     			if (chckbxUrbano.isSelected()){
-    			if (facade.getFiltersOfRH(r).contains("Urbano")){rhinf.addElement(r);}
+    			if (facade.getFiltersOfRH(rh1.next()).contains("Urbano")){rhinf.addElement(rh1.next());}
     		}
     						}
     	}
@@ -300,9 +306,10 @@ private final JLabel lblFondo = new JLabel("");
     	public void actionPerformed(ActionEvent arg0) {
     		ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
     		rhinf.removeAllElements();
-    		for (RuralHouse r: rh1){
+    		rh1.goFirst();
+    		while (rh1.hasNext()){
     			if (chckbxRural.isSelected()){
-    			if (facade.getFiltersOfRH(r).contains("Rural")){rhinf.addElement(r);}
+    			if (facade.getFiltersOfRH(rh1.next()).contains("Rural")){rhinf.addElement(rh1.next());}
     		}
     			
     			}

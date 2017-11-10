@@ -1,0 +1,26 @@
+package businessLogic;
+
+import domain.RuralHouse;
+import gui.MainGUI;
+
+public class pruebaIterator {
+	public static void main(String[] args) {
+		 
+		boolean isLocal=true;
+		 //obtener el objeto fachada
+		 ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
+		 ExtendedIterator i=facade.ruralHouseIterator();
+		 RuralHouse rh;
+		 i.goLast();
+		 while (i.hasPrevious()){
+		 rh=(RuralHouse) i.previous();
+		 rh.toString();
+		 }
+		 //Aunque suponemos que hemos llegado al principio, realizamos la operación
+		 i.goFirst();
+		 while (i.hasNext()){
+		 rh=i.next();
+		 rh.toString();
+		 }
+	}
+}

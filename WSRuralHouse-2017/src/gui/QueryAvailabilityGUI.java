@@ -1,6 +1,7 @@
 package gui;
 
 import businessLogic.ApplicationFacadeInterfaceWS;
+import businessLogic.ExtendedIterator;
 
 import com.toedter.calendar.JCalendar;
 
@@ -37,7 +38,7 @@ private static final long serialVersionUID = 1L;
   private Calendar calendarMio = null;
   private JLabel jLabel4 = new JLabel();
   private JScrollPane scrollPane = new JScrollPane();
-  private JComboBox<Object> comboBox ;
+  private JComboBox<RuralHouse> comboBox ;
   private JTable table;
   private DefaultTableModel tableModel;
   private final JLabel labelNoOffers = new JLabel("");
@@ -71,9 +72,12 @@ private static final long serialVersionUID = 1L;
 	  
 	ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
 		
-	Vector<RuralHouse> rhs=facade.getAllRuralHouses();
-	
-	comboBox = new JComboBox(rhs);
+	ExtendedIterator rhs=facade.ruralHouseIterator();
+	rhs.goFirst();
+	comboBox = new JComboBox<RuralHouse>();
+	while (rhs.hasNext()) {
+		comboBox.addItem(rhs.next());
+	}
 	//comboBox.setModel(new DefaultComboBoxModel(rhs));
 
 	
