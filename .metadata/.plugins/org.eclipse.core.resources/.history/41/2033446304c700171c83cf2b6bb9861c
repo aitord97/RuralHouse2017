@@ -1,0 +1,71 @@
+package gui;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.util.Vector;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import businessLogic.ApplicationFacadeInterfaceWS;
+import businessLogic.ExtendedIterator;
+import businessLogic.RhTable;
+import businessLogic.RuralHouseIterator;
+import domain.RuralHouse;
+
+import javax.swing.JTable;
+
+public class AllRHofUser extends JFrame {
+
+	private JPanel contentPane;
+	private JTable table;
+	private ExtendedIterator rh1= new RuralHouseIterator();
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					AllRHofUser frame = new AllRHofUser();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public AllRHofUser() {
+		setResizable(false);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		
+		
+		ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
+  		Vector<RuralHouse> vr = new Vector<>();
+  		rh1= facade.ruralHouseIterator();
+  		rh1.goFirst();
+  		while(rh1.hasNext()) {
+  			vr.add(rh1.next());
+  			
+  		}
+  		
+  		System.out.println("yas"+vr);
+  		RhTable tt = new RhTable(facade.getCurrentUser(), vr);
+  		
+  		table = new JTable(tt);
+		table.setBounds(5, 5, 434, 261);
+		contentPane.add(table);
+	}
+
+}

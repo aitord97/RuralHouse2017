@@ -19,10 +19,16 @@
 <fullyQualifiedTypeName name="dataAccess.DataAccess"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
-<fullyQualifiedTypeName name="domain.RuralHouse"/>
 <fullyQualifiedTypeName name="businessLogic.ExtendedIterator"/>
 <fullyQualifiedTypeName name="businessLogic.RuralHouseIterator"/>
-<fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="businessLogic.ApplicationFacadeInterfaceWS"/>
 <fullyQualifiedTypeName name="businessLogic.FacadeImplementationWS"/>
+<fullyQualifiedTypeName name="javax.swing.table.AbstractTableModel"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="domain.User"/>
+<fullyQualifiedTypeName name="domain.RuralHouse"/>
+<fullyQualifiedTypeName name="javax.swing.table.TableModel"/>
+<fullyQualifiedTypeName name="businessLogic.RhTable"/>
+<fullyQualifiedTypeName name="gui.AllRHofUser"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
 </qualifiedTypeNameHistroy>

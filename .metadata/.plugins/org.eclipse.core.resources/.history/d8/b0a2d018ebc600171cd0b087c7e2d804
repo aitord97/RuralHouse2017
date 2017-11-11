@@ -1,0 +1,30 @@
+package businessLogic;
+
+import javax.swing.table.AbstractTableModel;
+
+import domain.RuralHouse;
+
+public class RhTable extends AbstractTableModel {
+	protected RuralHouse[] rh;
+	  protected String[] columnNames =
+	    new String[] { "User", "Number", "Description", "city","numbaños","dormitorios","cocinas","comedores", "Plazasgaraje" };
+
+	@Override
+	public int getColumnCount() {
+		
+		return 0;
+	}
+
+	@Override
+	public int getRowCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Object getValueAt(int arg0, int arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

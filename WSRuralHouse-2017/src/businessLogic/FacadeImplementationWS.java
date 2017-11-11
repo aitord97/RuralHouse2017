@@ -276,6 +276,12 @@ public User currentUser;
 		DataAccess dbManager = new DataAccess();
 		dbManager.removeUserAccount(u);
 	}
+	@Override
+	public RhTable rhTable(Vector<RuralHouse> rh, User u) {
+		RhTable rh1 = new RhTable(getCurrentUser(), getCurrentUser().getUserRH());
+		return rh1;
+		
+	}
 
 
 }

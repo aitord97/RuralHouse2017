@@ -73,6 +73,7 @@ public class MainGUI extends JFrame {
 	private JButton btnEditOffer;
 	private JButton btnCancelOffer;
 	private JButton btnNewButton;
+	private JButton table;
 	private ExtendedIterator rh1= new RuralHouseIterator();
 	
 
@@ -193,6 +194,9 @@ public class MainGUI extends JFrame {
 			jContentPane.add(getLblCurrentuser());
 			jContentPane.add(getBtnPagares());
 			jContentPane.add(getBtnHistpag());
+			
+			
+			
 			
 			JLabel lblNewLabel_1 = new JLabel(); //$NON-NLS-1$ //$NON-NLS-2$
 			

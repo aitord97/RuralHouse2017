@@ -13,6 +13,8 @@
 			<item value="/Users/aitor/Downloads/OCP.zip"/>
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item value="false" key="FilterByLocation"/>
 		<item value="true" key="ShowStatusLine"/>

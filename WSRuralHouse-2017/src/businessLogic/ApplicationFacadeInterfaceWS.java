@@ -116,6 +116,7 @@ public interface ApplicationFacadeInterfaceWS  {
 	public int delateCreatedOffer (Offer o, User u);
 
 	public void removeUserAccount(User u);
+	public RhTable rhTable(Vector<RuralHouse> rh, User u);
 
 
 }

@@ -1,0 +1,38 @@
+package businessLogic;
+
+import java.util.Vector;
+
+import javax.swing.table.AbstractTableModel;
+
+import domain.RuralHouse;
+import domain.User;
+import gui.MainGUI;
+
+
+public class RhTable extends AbstractTableModel {
+	String[] columName = {"User", "Number", "Description", "city","numbaños","dormitorios","cocinas","comedores", "Plazasgaraje"};
+	Vector<RuralHouse> rh;
+	User u;
+	
+	
+	public RhTable(User u) {
+		this.u=u;
+	}
+	@Override
+	public int getColumnCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getRowCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Object getValueAt(int arg0, int arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

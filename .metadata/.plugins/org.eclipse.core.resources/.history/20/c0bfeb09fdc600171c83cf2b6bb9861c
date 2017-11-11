@@ -1,0 +1,46 @@
+package businessLogic;
+
+import java.util.Vector;
+
+import javax.swing.table.AbstractTableModel;
+
+import domain.RuralHouse;
+import gui.MainGUI;
+
+@SuppressWarnings("serial")
+public class RhTable extends AbstractTableModel {
+	Vector<RuralHouse> rh = new Vector<>();
+	Vector<String> columName = new Vector<String>();
+	ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
+		Vector<RuralHouse> vr = new Vector<>();
+		private ExtendedIterator rh1= new RuralHouseIterator();
+		rh1= facade.ruralHouseIterator();
+		rh1.goFirst();
+		while(rh1.hasNext()) {
+			vr.add(rh1.next());
+			
+		}
+	
+
+	
+	
+	@Override
+	public int getColumnCount(){
+		
+		int p = 9;
+		return p;
+	}
+
+	@Override
+	public int getRowCount() {
+		
+		return 0;
+	}
+
+	@Override
+	public Object getValueAt(int arg0, int arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
