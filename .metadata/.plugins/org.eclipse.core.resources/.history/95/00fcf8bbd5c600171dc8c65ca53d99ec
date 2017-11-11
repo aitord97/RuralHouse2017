@@ -10,7 +10,7 @@ public class UsuarioParticular extends User implements IAlertRuralHouse{
 		super(uA, uP, "UP");
 		// TODO Auto-generated constructor stub
 	}
-	public void update() {
+	public String update() {
 		System.out.println("Alert: Se ha añadido una oferta a una casa que sigues (Usuario particular)");
 	}
 
