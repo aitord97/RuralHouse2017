@@ -3166,3 +3166,35 @@ Caused by: java.lang.IllegalArgumentException: assertion failed.
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Unknown Source)
+!SESSION 2017-11-11 19:23:12.644 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/aitor/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/aitor/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-11-11 19:23:19.545
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2017-11-11 19:23:37.560
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: file mismatch, expected id=6bruqrirs1kpllhlo1epjemx8, got=a7l6ok49q19tcmveiihqa1ku9 (resource=BufferedChecksumIndexInput(MMapIndexInput(path="/Users/aitor/Desktop/EclipseWorkspace/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/http-cache.lucene60/_6.si"))). ; version: 2.0.6.v20170906-1226
+!STACK 0
+org.apache.lucene.index.CorruptIndexException: file mismatch, expected id=6bruqrirs1kpllhlo1epjemx8, got=a7l6ok49q19tcmveiihqa1ku9 (resource=BufferedChecksumIndexInput(MMapIndexInput(path="/Users/aitor/Desktop/EclipseWorkspace/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/http-cache.lucene60/_6.si")))
+	at org.apache.lucene.codecs.CodecUtil.checkIndexHeaderID(CodecUtil.java:297)
+	at org.apache.lucene.codecs.CodecUtil.checkIndexHeader(CodecUtil.java:256)
+	at org.apache.lucene.codecs.lucene50.Lucene50SegmentInfoFormat.read(Lucene50SegmentInfoFormat.java:86)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:350)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:284)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:910)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.rest.LuceneHttpCacheStorage.<init>(LuceneHttpCacheStorage.java:71)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.rest.RestBasedProblemsHistory.<init>(RestBasedProblemsHistory.java:83)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.createRestBasedProblemsHistory(ServerConnection.java:183)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:140)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: org.apache.lucene.index.CorruptIndexException: checksum passed (7c9cb9eb). possibly transient resource issue, or a Lucene or JVM bug (resource=BufferedChecksumIndexInput(MMapIndexInput(path="/Users/aitor/Desktop/EclipseWorkspace/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/http-cache.lucene60/_6.si")))
+		at org.apache.lucene.codecs.CodecUtil.checkFooter(CodecUtil.java:409)
+		at org.apache.lucene.codecs.lucene50.Lucene50SegmentInfoFormat.read(Lucene50SegmentInfoFormat.java:117)
+		... 10 more

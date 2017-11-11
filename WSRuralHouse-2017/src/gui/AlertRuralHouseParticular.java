@@ -44,10 +44,10 @@ public class AlertRuralHouseParticular extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public AlertRuralHouseParticular(java.util.List<RuralHouse> rhs, final User u) {
+	public AlertRuralHouseParticular(ExtendedIterator rhs, final User u) {
 		
-		for(RuralHouse rh : rhs){
-			rHList.addElement(rh);
+		while(rhs.hasNext()){
+			rHList.addElement(rhs.next());
 		}
 		setUser(u);
 		

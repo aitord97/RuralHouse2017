@@ -37,17 +37,17 @@ public class AlertRuralHouseAgencia extends JFrame {
 	private JTextField textField;
 	private DefaultComboBoxModel<RuralHouse> rHList = new DefaultComboBoxModel<RuralHouse>();
 	private User u = null;
-	public static int num=0;
+	
 
 	
 
 	/**
 	 * Create the frame.
 	 */
-	public AlertRuralHouseAgencia(java.util.List<RuralHouse> rhs, final User u) {
+	public AlertRuralHouseAgencia(ExtendedIterator rhs, final User u) {
 		
-		for(RuralHouse rh : rhs){
-			rHList.addElement(rh);
+		while(rhs.hasNext()){
+			rHList.addElement(rhs.next());
 		}
 		setUser(u);
 		

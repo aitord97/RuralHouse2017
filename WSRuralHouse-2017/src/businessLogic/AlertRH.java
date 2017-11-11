@@ -1,9 +1,15 @@
 package businessLogic;
 import domain.*;
 import java.util.ArrayList;
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+@Entity
 public class AlertRH implements Subject {
-	
+	@GeneratedValue
+	@Id
+	private int id;
 	private static ArrayList<IAlertRuralHouse> observadores = new ArrayList<IAlertRuralHouse>();
 	
 	public void attach (IAlertRuralHouse observador) {

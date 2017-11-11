@@ -567,3 +567,124 @@ Type domain.Reserva is not enhanced.
 [2017-11-11 18:36:48 #6 type] 
 Type domain.RuralHouse is not enhanced.
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 19:25:47 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' has been recovered (tr. 15-15)
+
+[2017-11-11 19:25:52 #2 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 6035@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 19:25:52 #3 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 19:25:52 #4 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 19:25:52 #5 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 19:25:52 #6 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 19:25:52 #7 type] 
+Type domain.RuralHouse is not enhanced.
+
+[2017-11-11 19:25:52 #8 type] 
+Type businessLogic.AlertRH is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 19:32:56 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' has been recovered (tr. 16-17)
+
+[2017-11-11 19:33:01 #2 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 6039@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 19:33:01 #3 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 19:33:01 #4 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 19:33:01 #5 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 19:33:01 #6 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 19:33:01 #7 type] 
+Type domain.RuralHouse is not enhanced.
+
+[2017-11-11 19:33:01 #8 type] 
+Type businessLogic.AlertRH is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 19:34:06 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 6041@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 19:34:06 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 19:34:06 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 19:34:06 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 19:34:06 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 19:34:06 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+[2017-11-11 19:34:06 #7 type] 
+Type businessLogic.AlertRH is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 19:35:17 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 6047@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 19:35:17 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 19:35:17 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 19:35:17 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 19:35:17 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 19:35:17 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+[2017-11-11 19:35:17 #7 type] 
+Type businessLogic.AlertRH is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 19:35:26 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 6050@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 19:35:27 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 19:35:27 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 19:35:27 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 19:35:27 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 19:35:27 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+[2017-11-11 19:35:27 #7 type] 
+Type businessLogic.AlertRH is not enhanced.
+

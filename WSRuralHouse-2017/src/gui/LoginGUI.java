@@ -12,7 +12,9 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import businessLogic.ApplicationFacadeInterfaceWS;
+import businessLogic.ExtendedIterator;
 import businessLogic.FacadeImplementationWS;
+import businessLogic.RuralHouseIterator;
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -199,20 +201,20 @@ public class LoginGUI extends JFrame {
 					
 					try {
 					if(u.compareTo("UsuarioParticular")==0) {
-						java.util.List<RuralHouse> rhs = new Vector<RuralHouse>();
-						rhs.add(new RuralHouse(null,"Irun","irun",3,3,3,3,3,null,null));
-						rhs.add(new RuralHouse(null,"Donostia","donostia",3,3,3,3,3,null,null));
-						for(RuralHouse rh : rhs)
-						if(rh.getHouseNumber()==null) {
-							rh.setHouseNumber(AlertRuralHouseAgencia.num++);
-							}
+						ExtendedIterator rhs = new RuralHouseIterator();
 						AlertRuralHouseParticular a = new AlertRuralHouseParticular(rhs,new UsuarioParticular("UsuarioParticular","",""));
-						AlertRuralHouseAgencia b = new AlertRuralHouseAgencia(rhs,new AgenciaDeViajes("AgenciaDeViajes","",""));
 
 						a.setVisible(true);
-						b.setVisible(true);
+						
 						dispose();
 					}
+					if(u.compareTo("AgenciaDeViajes")==0) {
+					ExtendedIterator rhs = new RuralHouseIterator();
+					AlertRuralHouseAgencia b = new AlertRuralHouseAgencia(rhs,new AgenciaDeViajes("AgenciaDeViajes","",""));
+					b.setVisible(true);
+					dispose();
+					}
+					
 					else if (facade.checkLogin(u, p)){
 						facade.setCurrentUser(u);
 						System.out.println("Usuario actual: "+facade.getCurrentUser());
