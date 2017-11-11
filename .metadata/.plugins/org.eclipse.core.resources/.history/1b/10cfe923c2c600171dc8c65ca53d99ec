@@ -1,0 +1,17 @@
+package domain;
+
+public class UsuarioParticular extends User implements IAlertRuralHouse{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public UsuarioParticular(String uA, String uP, String uT) {
+		super(uA, uP, "UP");
+		// TODO Auto-generated constructor stub
+	}
+	public void update() {
+		System.out.println("Alert: Se ha añadido una oferta a una casa que sigues");
+	}
+
+}

@@ -1,0 +1,229 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 11:16:28 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5356@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 11:16:29 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 11:16:29 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 11:16:29 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 11:16:29 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 11:16:29 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+[2017-11-11 11:16:29 #7 type.registry] 
+New type businessLogic.Subject
+
+[2017-11-11 11:16:29 #8 type.registry] 
+New type businessLogic.AlertRH
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 11:18:01 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' has been recovered (tr. 14-14)
+
+[2017-11-11 11:18:06 #2 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5359@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 11:18:06 #3 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 11:18:06 #4 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 11:18:06 #5 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 11:18:06 #6 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 11:18:06 #7 type] 
+Type domain.RuralHouse is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 11:19:35 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5361@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 11:19:35 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 11:19:35 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 11:19:35 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 11:19:35 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 11:19:35 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 11:20:05 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5363@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 11:20:06 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 11:20:06 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 11:20:06 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 11:20:06 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 11:20:06 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 11:58:43 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5407@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 11:58:43 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 11:58:43 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 11:58:43 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 11:58:43 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 11:58:43 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 12:03:13 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5409@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 12:03:13 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 12:03:13 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 12:03:13 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 12:03:13 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 12:03:13 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 12:04:26 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5411@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 12:04:26 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 12:04:26 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 12:04:26 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 12:04:26 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 12:04:26 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 12:17:17 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5421@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 12:17:17 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 12:17:17 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 12:17:17 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 12:17:17 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 12:17:17 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 12:23:51 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5430@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 12:23:51 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 12:23:51 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 12:23:51 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 12:23:51 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 12:23:51 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 12:24:50 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5434@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 12:24:50 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 12:24:50 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 12:24:50 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 12:24:50 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 12:24:50 #6 type] 
+Type domain.RuralHouse is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-11 12:26:11 #1 store] 
+Database '/Users/aitor/Desktop/EclipseWorkspace/WSRuralHouse-2017/resources\ruralHouses.odb' is opened by 5436@MacBook-Pro-de-Aitor.local
+
+[2017-11-11 12:26:11 #2 type] 
+Type domain.User is not enhanced.
+
+[2017-11-11 12:26:11 #3 type] 
+Type twitter4j.TwitterProfile is not enhanced.
+
+[2017-11-11 12:26:11 #4 type] 
+Type domain.Offer is not enhanced.
+
+[2017-11-11 12:26:11 #5 type] 
+Type domain.Reserva is not enhanced.
+
+[2017-11-11 12:26:11 #6 type] 
+Type domain.RuralHouse is not enhanced.
+

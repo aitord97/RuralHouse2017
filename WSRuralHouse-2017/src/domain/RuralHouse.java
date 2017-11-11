@@ -11,6 +11,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlID;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.persistence.*;
+import businessLogic.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @Entity
@@ -37,6 +38,8 @@ public class RuralHouse implements Serializable {
     private Vector<String> filterList;
     private String imgPath;
     
+    private AlertRH alert = new AlertRH();
+    
     
 	
 	public RuralHouse( User owner, String description, String city,
@@ -54,6 +57,7 @@ public class RuralHouse implements Serializable {
 		this.imgPath = img;
 		offers=new Vector<Offer>();
 	}
+	
 	public Integer getHouseNumber() {
 		return houseNumber;
 	}
@@ -102,6 +106,7 @@ public class RuralHouse implements Serializable {
         System.out.println("LLAMADA RuralHouse createOffer, offerNumber="+" firstDay="+firstDay+" lastDay="+lastDay+" price="+price);
         Offer off=new Offer(propietario,firstDay,lastDay,price,this);
         offers.add(off);
+        alert.notifyObservers();
         return off;
 	}
 	@Override
@@ -124,7 +129,7 @@ public class RuralHouse implements Serializable {
 		  return false;
 		if (getClass() != obj.getClass())
 		  return false;
-//		if (houseNumber != other.houseNumber) // NO COMPARAR ASÍ ya que houseNumber NO ES "int" sino objeto de "java.lang.Integer"
+//		if (houseNumber != other.houseNumber) // NO COMPARAR ASï¿½ ya que houseNumber NO ES "int" sino objeto de "java.lang.Integer"
 		if (!houseNumber.equals(other.houseNumber))
 		  return false;
    	    return true;
@@ -148,6 +153,14 @@ public class RuralHouse implements Serializable {
 		}
 		return availableOffers;
 	}
+	
+	
+	
+	public void addObservador(IAlertRuralHouse observador) {
+		alert.attach(observador);
+	}
+	
+	
 	public Vector<Offer> getAllOffers() {
 		Vector<Offer> res=new Vector<>();
 		for (Offer o: offers){res.addElement(o);}

@@ -1,0 +1,109 @@
+package gui;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import domain.RuralHouse;
+
+import businessLogic.ApplicationFacadeInterfaceWS;
+import businessLogic.ExtendedIterator;
+import businessLogic.RuralHouseIterator;
+
+import com.toedter.calendar.JCalendar;
+
+import domain.IAlertRuralHouse;
+import domain.Offer;
+import domain.Reserva;
+import domain.RuralHouse;
+import domain.User;
+
+import javax.swing.*;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.beans.*;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.util.*;
+import java.util.Random;
+
+public class AlertRuralHouse extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private DefaultComboBoxModel<RuralHouse> rHList = new DefaultComboBoxModel<RuralHouse>();
+	private User u = null;
+	public static int num=0;
+
+	
+
+	/**
+	 * Create the frame.
+	 */
+	public AlertRuralHouse(java.util.List<RuralHouse> rhs, final User u) {
+		
+		for(RuralHouse rh : rhs){
+			if(rh.getHouseNumber()==null) {
+				rh.setHouseNumber(AlertRuralHouse.num++);
+				}
+			rHList.addElement(rh);
+		}
+		setUser(u);
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JComboBox <RuralHouse>comboBox = new JComboBox<RuralHouse>();
+		comboBox.setBounds(6, 34, 440, 27);
+		contentPane.add(comboBox);
+		comboBox.setModel(rHList);
+		
+		JButton btnSeguirCasa = new JButton("Seguir casa");
+		btnSeguirCasa.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				RuralHouse rh = (RuralHouse) rHList.getSelectedItem();
+				rh.addObservador((IAlertRuralHouse) u);
+				textField.setText("Casa Rural Seguida");
+			}
+		});
+		btnSeguirCasa.setBounds(75, 243, 117, 29);
+		contentPane.add(btnSeguirCasa);
+		
+		textField = new JTextField();
+		textField.setBounds(6, 97, 438, 125);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		textField.setEditable(false);
+		
+		JButton btnCrearNuevaOferta = new JButton("Crear nueva oferta");
+		btnCrearNuevaOferta.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				RuralHouse rh = (RuralHouse) rHList.getSelectedItem();
+				rh.createOffer(getUser(), null, null, 8);
+			}
+		});
+		btnCrearNuevaOferta.setBounds(249, 243, 147, 29);
+		contentPane.add(btnCrearNuevaOferta);
+		
+		JLabel lblUsuarioParticular = new JLabel("Usuario Particular");
+		lblUsuarioParticular.setBounds(315, 6, 129, 16);
+		contentPane.add(lblUsuarioParticular);
+	}
+	
+	public User getUser() {
+		return u;
+	}
+	
+	public void setUser(User u) {
+		this.u=u;
+	}
+	
+}

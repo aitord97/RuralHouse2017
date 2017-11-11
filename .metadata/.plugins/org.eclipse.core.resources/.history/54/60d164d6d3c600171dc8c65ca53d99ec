@@ -1,0 +1,14 @@
+package domain;
+
+public class AgenciaDeViajes extends User implements IAlertRuralHouse {
+
+	public AgenciaDeViajes(String uA, String uP, String uT) {
+		super(uA, uP, "AV");
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void update() {
+		System.out.println("Alert: Se han añadido ofertas a las casas (Agencia de viajes)");
+	}
+
+}

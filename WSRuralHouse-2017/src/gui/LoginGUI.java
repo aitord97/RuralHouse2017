@@ -21,10 +21,12 @@ import javax.swing.JPasswordField;
 import javax.swing.JButton;
 
 import domain.RuralHouse;
+import domain.*;
 import exceptions.DB4oManagerCreationException;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.util.List;
 import java.util.Vector;
 
 import javax.swing.JInternalFrame;
@@ -172,7 +174,7 @@ public class LoginGUI extends JFrame {
 					
 						
 					}else{
-						JOptionPane.showMessageDialog(getContentPane(), "Usuario o contraseña incorrecta");
+						JOptionPane.showMessageDialog(getContentPane(), "Usuario o contraseï¿½a incorrecta");
 						
 					}
 						} catch (Exception e2) {
@@ -194,8 +196,24 @@ public class LoginGUI extends JFrame {
 					ApplicationFacadeInterfaceWS facade=MainGUI.getBusinessLogic();
 					String u = textField.getText();
 					String p = new String(passwordField.getPassword());
+					
 					try {
-				if (facade.checkLogin(u, p)){
+					if(u.compareTo("UsuarioParticular")==0) {
+						java.util.List<RuralHouse> rhs = new Vector<RuralHouse>();
+						rhs.add(new RuralHouse(null,"Irun","irun",3,3,3,3,3,null,null));
+						rhs.add(new RuralHouse(null,"Donostia","donostia",3,3,3,3,3,null,null));
+						for(RuralHouse rh : rhs)
+						if(rh.getHouseNumber()==null) {
+							rh.setHouseNumber(AlertRuralHouseAgencia.num++);
+							}
+						AlertRuralHouseParticular a = new AlertRuralHouseParticular(rhs,new UsuarioParticular("UsuarioParticular","",""));
+						AlertRuralHouseAgencia b = new AlertRuralHouseAgencia(rhs,new AgenciaDeViajes("AgenciaDeViajes","",""));
+
+						a.setVisible(true);
+						b.setVisible(true);
+						dispose();
+					}
+					else if (facade.checkLogin(u, p)){
 						facade.setCurrentUser(u);
 						System.out.println("Usuario actual: "+facade.getCurrentUser());
 					if(facade.getUserTypeByAcc(u).compareTo("Owner")==0){
@@ -210,7 +228,7 @@ public class LoginGUI extends JFrame {
 				
 					
 				}else{
-					JOptionPane.showMessageDialog(getContentPane(), "Contraseña incorrecta");
+					JOptionPane.showMessageDialog(getContentPane(), "Contraseï¿½a incorrecta");
 					
 				}
 					} catch (Exception e2) {

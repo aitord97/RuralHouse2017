@@ -1,0 +1,6 @@
+package domain;
+
+public interface IAlertRuralHouse {
+	public String update();
+
+}

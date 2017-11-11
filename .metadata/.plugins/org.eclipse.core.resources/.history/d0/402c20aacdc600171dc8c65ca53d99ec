@@ -1,0 +1,101 @@
+package gui;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import domain.RuralHouse;
+
+import businessLogic.ApplicationFacadeInterfaceWS;
+import businessLogic.ExtendedIterator;
+import businessLogic.RuralHouseIterator;
+
+import com.toedter.calendar.JCalendar;
+
+import domain.IAlertRuralHouse;
+import domain.Offer;
+import domain.Reserva;
+import domain.RuralHouse;
+import domain.User;
+
+import javax.swing.*;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.beans.*;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.util.*;
+
+public class AlertRuralHouse extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private DefaultComboBoxModel<RuralHouse> rHList = new DefaultComboBoxModel<RuralHouse>();
+	private User u = null;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					AlertRuralHouse frame = new AlertRuralHouse();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+	/**
+	 * Create the frame.
+	 */
+	public AlertRuralHouse() {
+		
+		rHList.addElement(new RuralHouse(null,"hhh", "irun",3,3,3,3,3,null,""));
+		rHList.addElement(new RuralHouse(null,"iii", "donostia",3,3,3,3,3,null,""));
+		setUser(u);
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JComboBox <RuralHouse>comboBox = new JComboBox<RuralHouse>();
+		comboBox.setBounds(5, 5, 440, 27);
+		contentPane.add(comboBox);
+		comboBox.setModel(rHList);
+		
+		JButton btnSeguirCasa = new JButton("Seguir casa");
+		btnSeguirCasa.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				RuralHouse rh = (RuralHouse) rHList.getSelectedItem();
+				rh.addObservador((IAlertRuralHouse) getUser());
+			}
+		});
+		btnSeguirCasa.setBounds(164, 243, 117, 29);
+		contentPane.add(btnSeguirCasa);
+		
+		textField = new JTextField();
+		textField.setBounds(6, 97, 438, 125);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		textField.setEditable(false);
+	}
+	
+	public User getUser() {
+		return u;
+	}
+	
+	public void setUser(User u) {
+		this.u=u;
+	}
+	
+}
