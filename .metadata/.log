@@ -10149,3 +10149,16 @@ Caused by: java.io.FileNotFoundException: /Users/aitor/Desktop/EclipseWorkspace/
 	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
 	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:255)
 	... 12 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-11-11 12:35:54.747
+!MESSAGE An internal error occurred during: "Periodic workspace save.".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot set lower sequence number for root (previous: 45, new: 44). Location: /Users/aitor/Desktop/EclipseWorkspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.resources.SaveManager.validateMasterTableBeforeSave(SaveManager.java:1621)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1285)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1277)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1254)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)

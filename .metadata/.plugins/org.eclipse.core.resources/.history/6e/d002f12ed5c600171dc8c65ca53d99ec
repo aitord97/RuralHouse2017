@@ -7,7 +7,7 @@ public class AgenciaDeViajes extends User implements IAlertRuralHouse {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void update() {
+	public String update() {
 		System.out.println("Alert: Se han añadido ofertas a las casas (Agencia de viajes)");
 	}
 
